@@ -26,7 +26,11 @@ and compile texts that need to be translated(And babel.cfg is really important w
     $ flask translate init <lang-code>
     $ flask translate update
     $ flask compile
+    
+### Error handler : Mail and logging
+Remember to set e-mail username and password in .flaskenv before deploying on the production server.
 
+The log file will be automatically delete(Max 10 files, delete from earlier one), so don't bother with storage problems.
    
     
 
