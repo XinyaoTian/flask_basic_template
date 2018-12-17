@@ -1,6 +1,6 @@
-from flask import render_template, url_for
+from flask import render_template
 from app.main import bp
-from flask import current_app
+from flask_babel import _
 
 
 @bp.route('/')
@@ -12,4 +12,4 @@ def index():
         {'author': 'Leon', 'body': 'Enjoy developing.'}
     ]
     # This path indites the path in app/templates/
-    return render_template('index.html', user=user, posts=posts)
+    return render_template('index.html', title=_('Front Page'), user=user, posts=posts)

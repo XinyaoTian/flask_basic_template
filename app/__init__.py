@@ -1,5 +1,7 @@
-from flask import Flask
+from flask import Flask, current_app, request
 from config import Config
+# I18n & L10n
+from flask_babel import Babel
 
 
 # db = SQLAlchemy()
@@ -10,7 +12,8 @@ from config import Config
 # mail = Mail()
 # bootstrap = Bootstrap()
 # moment = Moment()
-# babel = Babel()
+babel = Babel()
+
 
 # using factory model
 def create_app(config_class=Config):
@@ -23,7 +26,7 @@ def create_app(config_class=Config):
     # mail.init_app(app)
     # bootstrap.init_app(app)
     # moment.init_app(app)
-    # babel.init_app(app)
+    babel.init_app(app)
 
     # import errors blueprint
     from app.errors import bp as errors_bp
@@ -35,4 +38,12 @@ def create_app(config_class=Config):
 
     return app
 
+
+# for I18n and L10n
+@babel.localeselector
+def get_locale():
+    # # Auto-select preference language
+    # return request.accept_languages.best_match(current_app.config['LANGUAGES'])
+    # Force to return Chinese
+    return 'zh'
 

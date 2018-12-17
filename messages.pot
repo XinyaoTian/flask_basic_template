@@ -1,0 +1,77 @@
+# Translations template for PROJECT.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-12-17 19:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: app/forms.py:9
+msgid "Username"
+msgstr ""
+
+#: app/forms.py:10
+msgid "Password"
+msgstr ""
+
+#: app/forms.py:11
+msgid "Remember Me"
+msgstr ""
+
+#: app/forms.py:12
+msgid "Sign In"
+msgstr ""
+
+#: app/main/routes.py:15 app/templates/base.html:10
+msgid "Front Page"
+msgstr ""
+
+#: app/templates/base.html:4
+msgid "My web application"
+msgstr ""
+
+#: app/templates/base.html:6
+msgid "Welcome to my web application!"
+msgstr ""
+
+#: app/templates/base.html:10
+msgid "My web app"
+msgstr ""
+
+#: app/templates/index.html:4
+msgid "Hello"
+msgstr ""
+
+#: app/templates/index.html:6
+msgid "says"
+msgstr ""
+
+#: app/templates/errors/404.html:5
+msgid "File Not Found!"
+msgstr ""
+
+#: app/templates/errors/404.html:6
+msgid "At least you have Internet signal. Be happy!"
+msgstr ""
+
+#: app/templates/errors/500.html:5
+msgid "Server Internal Error!"
+msgstr ""
+
+#: app/templates/errors/500.html:6
+msgid ""
+"Congratulations, you found a BUG! Perhaps you should buy a lottery "
+"tonight."
+msgstr ""
+
